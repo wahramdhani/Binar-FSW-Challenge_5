@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>The Game</title>
+</head>
+<body>
+  <!-- NAVIGATION -->
+    <header class = "nav-game">
+        <div class="col-12">
+          <a href="/"><</a><img src="assets/logo 1.png" alt="logo-game">
+          <span>ROCK PAPER SCISSORS</span>
+        </div>
+    </header>
+    <!-- GAME-PLAY -->
+<section class= "game-play">
+  <div class="container">
+    <div class="row">
+    <div class="col-1"></div>
+    <div class="col-4 flex-column" style="text-align: center;">
+      <div class="player-name">player 1</div>
+      <button class="rock game-picture" id="rock1"><img src="assets/batu.png" alt="rock"></button>
+      <button class="paper game-picture" id="paper1"><img src="assets/kertas.png" alt="paper"></button>
+      <button class=" scissors game-picture" id="scissors1"><img src="assets/gunting.png" alt="scissors"></button>
+      </div>
+    <div class="col-2 align-self-center" style="text-align: center;">
+      <div class="game-label">
+        <h1>vs</h1>
+        <h1 style="display: none;">player 1 win</h1>
+        <h1 style="display: none;">com win</h1>
+        <h1 style="display: none;">draw</h1>
+      </div>
+    </div>
+    <div class="col-4 flex-column" style="text-align: center;">
+      <div class="player-name">com</div>
+      <div class="com-choice game-picture"><img src="assets/batu.png" alt="rock"></div>
+      <div class="com-choice game-picture"><img src="assets/kertas.png" alt="paper"></div>
+      <div class="com-choice game-picture"><img src="assets/gunting.png" alt="scissors"></div>
+      </div>
+      <div class="col-1" style="width: 100%;"></div>
+      </div>
+      <div class="game-picture" style="text-align: center;" id="refresh-icon"><img src="assets/refresh.png" alt="refresh"></div>
+</section>
+<script src="./game_logic/games.js"></script>
+</body>
+</html>
